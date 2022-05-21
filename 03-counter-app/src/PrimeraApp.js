@@ -1,8 +1,9 @@
 import React from 'react';
 
 const PrimeraApp = () => {
-
-    return <>
+    
+    // Al poner las <></> lo toma como un "Fragment"
+    return <> 
         <h1>Hola Mundo</h1>
         <p>Mi primera aplicación</p>
     </>
