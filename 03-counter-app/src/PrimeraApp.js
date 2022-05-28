@@ -1,10 +1,12 @@
 import React from 'react';
+import PropTypes from 'prop-types';
 
-const PrimeraApp = () => {
-    
+const PrimeraApp = ( { saludo } ) => {
+
+
     // Al poner las <></> lo toma como un "Fragment"
     return <> 
-        <h1>Hola Mundo</h1>
+        <h1> {saludo} </h1>
         <p>Mi primera aplicación</p>
     </>
     
@@ -13,5 +15,10 @@ const PrimeraApp = () => {
 
 }
 
+
+PrimeraApp.propTypes = {
+    saludo: PropTypes.string.isRequired,
+    otra: PropTypes.number.isRequired
+}
 
 export default PrimeraApp;
