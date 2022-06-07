@@ -18,8 +18,6 @@ export const AddCategory = ( { setCategories } ) => {
             setInputValue('');
         }
 
-
-        console.log('Submit Hecho!');
     }
 
   return (
